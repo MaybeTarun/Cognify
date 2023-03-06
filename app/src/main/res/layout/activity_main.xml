@@ -89,6 +89,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Username or Email"
+                    app:startIconDrawable="@drawable/mail"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -107,11 +108,11 @@
                         android:textColor="@color/black"
                         android:textStyle="normal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                         />
+                        android:layout_height="wrap_content"/>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Password"
+                    app:startIconDrawable="@drawable/pass"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -136,6 +137,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
+                    android:id="@+id/forgor"
                     android:padding="7dp"
                     android:textSize="17sp"
                     android:text="Forgot Password?"
@@ -159,6 +161,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Username"
+                    app:startIconDrawable="@drawable/mail"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -181,30 +184,8 @@
                         />
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
-                    android:hint="Age"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
-                    app:shapeAppearanceOverlay="@style/Button4"
-                    app:boxStrokeColor="@color/pastelgreen"
-                    app:boxStrokeWidth="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:inputType="number"
-                        android:id="@+id/age"
-                        android:ems="10"
-                        android:textSize="17sp"
-                        android:textColor="@color/black"
-                        android:textStyle="normal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
-                </com.google.android.material.textfield.TextInputLayout>
-                <com.google.android.material.textfield.TextInputLayout
                     android:hint="Email"
+                    app:startIconDrawable="@drawable/mail"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -227,7 +208,32 @@
                         />
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
+                    android:hint="Age"
+                    app:startIconDrawable="@drawable/age"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    app:shapeAppearanceOverlay="@style/Button4"
+                    app:boxStrokeColor="@color/pastelgreen"
+                    app:boxStrokeWidth="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:inputType="number"
+                        android:id="@+id/age"
+                        android:ems="10"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
                     android:hint="Password"
+                    app:startIconDrawable="@drawable/pass"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -252,6 +258,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Confirm Password"
+                    app:startIconDrawable="@drawable/confirmpass"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"

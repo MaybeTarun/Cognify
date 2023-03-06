@@ -2,4 +2,5 @@
     <string name="app_name">Cognify</string>
     <string name="login">Log In</string>
     <string name="signup">Sign Up</string>
+    <string name="load">Let\'s go on a cognitive adventure!</string>
 </resources>
