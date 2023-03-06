@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="pastelgreen">#77DD77</color>
     <color name="transy">#00FFFFFF</color>
+    <color name="lightgrey">#D3D3D3</color>
 
 </resources>
