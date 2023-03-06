@@ -7,4 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_url="drawable/loadingg.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
