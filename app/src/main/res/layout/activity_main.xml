@@ -292,7 +292,6 @@
                 android:gravity="center"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:layout_marginBottom="15dp"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/black"
                 android:layout_gravity="center"
@@ -301,6 +300,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </Button>
+
+            <TextView
+                android:id="@+id/alredy"
+                android:padding="7dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                android:textSize="10sp"
+                android:text="Account already exists? Go Back"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:textColor="@color/pastelgreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
 
             <TextView
                 android:id="@+id/oro"
@@ -325,11 +339,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                     <ImageView
+                        android:id="@+id/google"
                         android:layout_margin="10dp"
                         android:src="@drawable/google"
                         android:layout_width="35dp"
                         android:layout_height="35dp"/>
                     <ImageView
+                        android:id="@+id/facebook"
                         android:layout_margin="10dp"
                         android:src="@drawable/facebook"
                         android:layout_width="35dp"

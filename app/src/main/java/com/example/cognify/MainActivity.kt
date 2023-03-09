@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val loginlayout = findViewById<LinearLayout>(R.id.loginlayout)
         val loginbutton = findViewById<Button>(R.id.loginbutton)
         val oro = findViewById<TextView>(R.id.oro)
+        val alredy = findViewById<TextView>(R.id.alredy)
         val sss = findViewById<LinearLayout>(R.id.sss)
         signup.setOnClickListener {
             signup.background = resources.getDrawable(R.drawable.switch_trcks, null)
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             loginlayout.visibility = View.GONE
             oro.visibility = View.GONE
             sss.visibility = View.GONE
+            alredy.visibility = View.VISIBLE
             login.setTextColor(resources.getColor(R.color.pastelgreen, null))
             loginbutton.text = "Sign Up"
         }
@@ -38,6 +40,7 @@ class MainActivity : AppCompatActivity() {
             loginlayout.visibility = View.VISIBLE
             oro.visibility = View.VISIBLE
             sss.visibility = View.VISIBLE
+            alredy.visibility = View.GONE
             login.setTextColor(resources.getColor(R.color.white, null))
             loginbutton.text = "Log In"
         }
