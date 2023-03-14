@@ -4,18 +4,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
 
 class MyAdapter(private val tech_list : ArrayList<LearningTechs>) :
     RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+
+    private lateinit var mlistener : OnClickListener
+
+    interface OnClickListener {
+        fun onItemClick(position: Int)
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.technique_card,
         parent, false)
-        return MyViewHolder(itemView)
+
+        return MyViewHolder(itemView, mlistener)
     }
 
     override fun getItemCount(): Int {
@@ -28,11 +33,21 @@ class MyAdapter(private val tech_list : ArrayList<LearningTechs>) :
         holder.tech_detail.text = currentItem.tech_detail
     }
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    fun setOnClickListener(listener: OnClickListener) {
+        mlistener = listener
+    }
+
+
+    class MyViewHolder(itemView: View, listener: OnClickListener) : RecyclerView.ViewHolder(itemView) {
 
         val tech_name : TextView = itemView.findViewById(R.id.tech_name)
         val tech_detail : TextView = itemView.findViewById(R.id.tech_detail)
 
+        init {
+            itemView.setOnClickListener() {
+                listener.onItemClick(adapterPosition)
+            }
+        }
 
     }
 }

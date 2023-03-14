@@ -90,6 +90,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Username or Email"
                     app:startIconDrawable="@drawable/mail"
+                    android:textColorHint="@color/grey"
+                    app:startIconTint="@color/grey"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -113,6 +115,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Password"
                     app:startIconDrawable="@drawable/pass"
+                    android:textColorHint="@color/grey"
+                    app:startIconTint="@color/grey"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -161,7 +165,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Username"
-                    app:startIconDrawable="@drawable/mail"
+                    app:startIconDrawable="@drawable/age"
+                    android:textColorHint="@color/grey"
+                    app:startIconTint="@color/grey"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -186,6 +192,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Email"
                     app:startIconDrawable="@drawable/mail"
+                    android:textColorHint="@color/grey"
+                    app:startIconTint="@color/grey"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -210,6 +218,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Age"
                     app:startIconDrawable="@drawable/age"
+                    android:textColorHint="@color/grey"
+                    app:startIconTint="@color/grey"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -234,6 +244,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Password"
                     app:startIconDrawable="@drawable/pass"
+                    android:textColorHint="@color/grey"
+                    app:startIconTint="@color/grey"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -259,6 +271,8 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="Confirm Password"
                     app:startIconDrawable="@drawable/confirmpass"
+                    android:textColorHint="@color/grey"
+                    app:startIconTint="@color/grey"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -338,18 +352,23 @@
                 android:layout_marginBottom="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                    <ImageView
-                        android:id="@+id/google"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/google"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"/>
-                    <ImageView
-                        android:id="@+id/facebook"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/facebook"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"/>
+
+                <ImageView
+                    android:id="@+id/google"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/pastelgreen"
+                    android:padding="3dp"
+                    android:src="@drawable/google" />
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:background="@color/pastelgreen"
+                    android:layout_margin="10dp"
+                    android:padding="2dp"
+                    android:src="@drawable/facebook"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
             </LinearLayout>
 
         </LinearLayout>

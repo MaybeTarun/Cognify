@@ -27,7 +27,6 @@
                 android:id="@+id/tech_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:padding="10dp"
                 android:text="Spaced Retrieval"
                 android:textAlignment="center"
@@ -40,22 +39,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tech_detail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:justificationMode="inter_word"
-                android:padding="15dp"
-                android:text="It encourages students to study over a longer period of time instead of cramming the night before. When our brains almost forget something, they work harder to recall that information. Spacing out your studying allows your mind to make connections between ideas and build upon the knowledge that can be easily recalled later."
-                android:textColor="@color/black"
-                android:textSize="13dp"
-                android:textStyle="normal"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tech_name" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

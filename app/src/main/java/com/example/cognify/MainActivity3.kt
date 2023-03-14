@@ -1,9 +1,9 @@
 package com.example.cognify
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -47,6 +47,16 @@ class MainActivity3 : AppCompatActivity() {
             val oof = LearningTechs(tech_name[i], tech_detail[i])
             newArrayList.add(oof)
         }
-        newRecyclerView.adapter = MyAdapter(newArrayList)
+
+        var adapter = MyAdapter(newArrayList)
+        newRecyclerView.adapter = adapter
+        adapter.setOnClickListener(object : MyAdapter.OnClickListener {
+            override fun onItemClick(position : Int) {
+                val intent = Intent(this@MainActivity3, MainActivity4::class.java)
+                intent.putExtra("tech_name", newArrayList[position].tech_name)
+                intent.putExtra("tech_detail", newArrayList[position].tech_detail)
+                startActivity(intent)
+            }
+        })
     }
 }

@@ -47,7 +47,7 @@
       <androidx.recyclerview.widget.RecyclerView
           android:id="@+id/techniques"
           android:layout_width="match_parent"
-          android:layout_height="434dp"
+          android:layout_height="430dp"
           android:layout_weight="1"
           android:padding="15dp" />
 
