@@ -44,7 +44,7 @@ class MyAdapter(private val tech_list : ArrayList<LearningTechs>) :
         val tech_detail : TextView = itemView.findViewById(R.id.tech_detail)
 
         init {
-            itemView.setOnClickListener() {
+            itemView.setOnClickListener {
                 listener.onItemClick(adapterPosition)
             }
         }

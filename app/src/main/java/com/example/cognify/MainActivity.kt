@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 
@@ -20,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         val oro = findViewById<TextView>(R.id.oro)
         val alredy = findViewById<TextView>(R.id.alredy)
         val sss = findViewById<LinearLayout>(R.id.sss)
+        val usernameEditText = findViewById<EditText>(R.id.username)
+        val passwordEditText = findViewById<EditText>(R.id.password)
+
         signup.setOnClickListener {
             signup.background = resources.getDrawable(R.drawable.switch_trcks, null)
             signup.setTextColor(resources.getColor(R.color.white, null))
@@ -45,7 +49,17 @@ class MainActivity : AppCompatActivity() {
             loginbutton.text = "Log In"
         }
         loginbutton.setOnClickListener {
-            startActivity(Intent(this@MainActivity,MainActivity2::class.java))
+            val username = usernameEditText.text.toString()
+            val password = passwordEditText.text.toString()
+            if (username == "tarun" && password == "tarun123") {
+                startActivity(Intent(this@MainActivity,MainActivity2::class.java))
+            }
+            else {
+                usernameEditText.setText("")
+                passwordEditText.setText("")
+            }
         }
+
+
     }
 }
