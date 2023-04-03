@@ -12,7 +12,6 @@
         android:backgroundTint="@color/pastelgreen"
         android:layout_height="wrap_content"
         app:cardCornerRadius="30dp"
-        app:cardElevation="5dp"
         android:padding="5dp"
         tools:ignore="MissingConstraints">
 

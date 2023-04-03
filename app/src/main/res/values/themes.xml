@@ -13,4 +13,12 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="FloatingActionButtonStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/fab2</item>
+    </style>
+
+    <style name="fab2" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">30%</item>
+    </style>
 </resources>

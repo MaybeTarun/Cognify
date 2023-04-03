@@ -26,6 +26,7 @@
   </androidx.cardview.widget.CardView>
 
   <androidx.core.widget.NestedScrollView
+      android:id="@+id/nestedScrollView"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       app:layout_constraintEnd_toEndOf="parent"
@@ -54,5 +55,64 @@
     </androidx.cardview.widget.CardView>
 
   </androidx.core.widget.NestedScrollView>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/fab"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="15dp"
+      android:src="@drawable/plus"
+      app:backgroundTint="@color/pastelgreen"
+      app:fabSize="normal"
+      android:clickable="true"
+      android:focusable="true"
+      style="@style/FloatingActionButtonStyle"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/uploadtext"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="15dp"
+      android:layout_marginEnd="12dp"
+      android:backgroundTint="#CEE7CE"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="@+id/fab"
+      app:layout_constraintEnd_toStartOf="@+id/fab"
+      app:layout_constraintTop_toTopOf="@+id/fab"
+      app:srcCompat="@drawable/text"
+      tools:ignore="MissingConstraints" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/uploadimage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="15dp"
+      android:backgroundTint="#CEE7CE"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="@+id/uploadspeech"
+      app:layout_constraintEnd_toStartOf="@+id/uploadspeech"
+      app:layout_constraintTop_toTopOf="@+id/uploadspeech"
+      app:srcCompat="@drawable/image"
+      tools:ignore="MissingConstraints" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/uploadspeech"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="15dp"
+      android:backgroundTint="#CEE7CE"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="@+id/uploadtext"
+      app:layout_constraintEnd_toStartOf="@+id/uploadtext"
+      app:layout_constraintTop_toTopOf="@+id/uploadtext"
+      app:srcCompat="@drawable/speech" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

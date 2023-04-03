@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity3 : AppCompatActivity() {
 
@@ -13,6 +14,7 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var newArrayList : ArrayList<LearningTechs>
     lateinit var tech_name : Array<String>
     lateinit var tech_detail : Array<String>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
@@ -43,6 +45,26 @@ class MainActivity3 : AppCompatActivity() {
 
         newArrayList = arrayListOf<LearningTechs>()
         getUserdata()
+
+        val fab: FloatingActionButton = findViewById(R.id.fab)
+        val uploadtext: FloatingActionButton = findViewById(R.id.uploadtext)
+        val uploadspeech: FloatingActionButton = findViewById(R.id.uploadspeech)
+        val uploadimage: FloatingActionButton = findViewById(R.id.uploadimage)
+        var isCross = false
+        fab.setOnClickListener { view ->
+            if (isCross) {
+                fab.setImageResource(R.drawable.plus)
+                uploadtext.visibility = View.GONE
+                uploadimage.visibility = View.GONE
+                uploadspeech.visibility = View.GONE
+            } else {
+                fab.setImageResource(R.drawable.cross)
+                uploadtext.visibility = View.VISIBLE
+                uploadimage.visibility = View.VISIBLE
+                uploadspeech.visibility = View.VISIBLE
+            }
+            isCross = !isCross
+        }
 
     }
 
