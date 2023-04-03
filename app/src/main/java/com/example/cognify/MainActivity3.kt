@@ -22,6 +22,8 @@ class MainActivity3 : AppCompatActivity() {
             "Feynman Technique",
             "Leitner System",
             "Mind Mapping",
+            "Text to Speech",
+            "Text to Video",
             "Questions"
         )
 
@@ -30,6 +32,8 @@ class MainActivity3 : AppCompatActivity() {
             "It is an efficient method of learning a concept quickly by explaining it in plain and simple terms. It’s based on the idea, 'If you want to understand something well, try to explain it simply'. What that means is, by attempting to explain a concept in our own words, we are likely to understand it a lot faster.",
             "It is a learning technique based on flashcards. Ideally, you keep your cards in several different boxes to track when you need to study each set. Every card starts in Box 1. If you get a card right, you move it to the next box. If you get a card wrong, you either move it down a box or keep it in Box 1 (if it’s already there).",
             "It allows you to visually organize information in a diagram. First, you write a word in the center of a blank page. From there, you write major ideas and keywords and connect them directly to the central concept. Other related ideas will continue to branch out.",
+            "It converts your given data into speech. This method is for people who can concentrate better while listening instead of reading",
+            "It converts your data into videos. This method is for people who can concentrate better while watching instead of reading",
             "It gives you practice questions"
         )
 
