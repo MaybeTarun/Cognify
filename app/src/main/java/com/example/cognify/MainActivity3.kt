@@ -18,9 +18,9 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var newArrayList : ArrayList<LearningTechs>
     lateinit var tech_name : Array<String>
     lateinit var tech_detail : Array<String>
-//    val accessKey = "your-access-key"
-//    val secretKey = "your-secret-key"
-//    val bucketName = "your-bucket-name"
+//    val accessKey = "access-key"
+//    val secretKey = "secret-key"
+//    val bucketName = "bucket-name"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
