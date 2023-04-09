@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "604745378835",
+    "project_id": "cognify-383207",
+    "storage_bucket": "cognify-383207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604745378835:android:b1951d6515e2efaed263e6",
+        "android_client_info": {
+          "package_name": "com.example.cognify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604745378835-hp09qrsrkbn7emvki7f04d3egqq909dt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cognify",
+            "certificate_hash": "60ab4b0979990eb780dbc3220d2e59487a3a73a0"
+          }
+        },
+        {
+          "client_id": "604745378835-oe4v5ggc206g3ddu4r7lr5f2c384fj7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgOBFbcTRcICM_vFpfQ0zX90Q00Exmwcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604745378835-gb9ksthj2st0etveksml6787rikr9nh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

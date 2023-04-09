@@ -3,11 +3,11 @@
     <style name="Theme.Cognify" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pastelgreen</item>
-        <item name="colorPrimaryVariant">@color/transy</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/pastelgreen</item>
-        <item name="colorSecondaryVariant">@color/lightgrey</item>
+        <item name="colorSecondaryVariant">@color/black</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>

@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:hint="Username or Email"
+                    android:hint="Email"
                     app:startIconDrawable="@drawable/mail"
                     android:textColorHint="@color/grey"
                     app:startIconTint="@color/grey"
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:inputType="textPersonName|textEmailAddress"
+                        android:inputType="textEmailAddress"
                         android:id="@+id/username"
                         android:ems="10"
                         android:textSize="17sp"
@@ -253,6 +253,7 @@
                     app:shapeAppearanceOverlay="@style/Button4"
                     app:boxStrokeColor="@color/pastelgreen"
                     app:boxStrokeWidth="1dp"
+                    app:endIconMode="password_toggle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -263,7 +264,6 @@
                         android:textSize="17sp"
                         android:textColor="@color/black"
                         android:textStyle="normal"
-                        app:endIconMode="password_toggle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         />
@@ -363,6 +363,7 @@
                     android:src="@drawable/google" />
                 <ImageView
                     android:id="@+id/facebook"
+                    android:visibility="gone"
                     android:background="@color/pastelgreen"
                     android:layout_margin="10dp"
                     android:padding="2dp"

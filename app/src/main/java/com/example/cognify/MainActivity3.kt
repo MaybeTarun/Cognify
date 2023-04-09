@@ -18,9 +18,6 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var newArrayList : ArrayList<LearningTechs>
     lateinit var tech_name : Array<String>
     lateinit var tech_detail : Array<String>
-//    val accessKey = "access-key"
-//    val secretKey = "secret-key"
-//    val bucketName = "bucket-name"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -93,30 +90,5 @@ class MainActivity3 : AppCompatActivity() {
         })
     }
 
-//    fun uploadImage(file: File) {
-//        val credentials = BasicAWSCredentials(accessKey, secretKey)
-//        val s3client = AmazonS3Client(credentials)
-//
-//        val key = "images/${file.name}"
-//        val request = PutObjectRequest(bucketName, key, file)
-//
-//        s3client.putObject(request)
-//    }
-//
-//    fun uploadTextFileToS3(file: File, bucketName: String, s3Client: AmazonS3) {
-//        val keyName = file.name
-//        val putObjectRequest = PutObjectRequest(bucketName, keyName, file)
-//        s3Client.putObject(putObjectRequest)
-//    }
-//
-//    fun uploadAudioFileToS3(file: File, bucketName: String, s3Client: AmazonS3) {
-//        val keyName = file.name
-//        val metadata = ObjectMetadata().apply {
-//            contentType = "audio/mpeg"
-//        }
-//        val putObjectRequest = PutObjectRequest(bucketName, keyName, file)
-//            .withMetadata(metadata)
-//        s3Client.putObject(putObjectRequest)
-//    }
 
 }
