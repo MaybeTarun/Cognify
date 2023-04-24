@@ -23,6 +23,18 @@
       tools:ignore="MissingConstraints"
       tools:layout_editor_absoluteX="10dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Cognify"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="70dp">
+
+    </TextView>
+
   </androidx.cardview.widget.CardView>
 
   <androidx.core.widget.NestedScrollView

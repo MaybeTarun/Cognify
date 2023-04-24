@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
             login.background = resources.getDrawable(R.drawable.switch_trcks, null)
             signuplayout.visibility = View.GONE
             loginlayout.visibility = View.VISIBLE
-            oro.visibility = View.VISIBLE
+//            oro.visibility = View.VISIBLE
             sss.visibility = View.VISIBLE
             alredy.visibility = View.GONE
             login.setTextColor(resources.getColor(R.color.white, null))
